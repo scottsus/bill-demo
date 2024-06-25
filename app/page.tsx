@@ -4,11 +4,6 @@ import { useChat } from 'ai/react';
 import { SendHorizonalIcon } from 'lucide-react';
 import { FormEvent } from 'react';
 
-type Message = {
-  sender: 'user' | 'assistant';
-  text: string;
-};
-
 export default function Home() {
   const { messages, input, setInput, handleInputChange, handleSubmit } =
     useChat({
